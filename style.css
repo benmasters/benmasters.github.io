@@ -133,9 +133,11 @@ margin-top: 250px;
     opacity:0.999;
     border-radius:50%;
     margin-top:20px;
+    transition: transform .2s;
 }
 .ben1:hover{
     opacity: 0.9999;
+    transform: scale(1.5);
 }
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .swap-on-hover {
