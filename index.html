@@ -16,7 +16,17 @@
 <script src="script.js"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
+<script>
+	 cubeAngle = 90;
+document.getElementById("cube").addEventListener("click", rotate);
 
+function rotate(){
+    cube.style.transform = "rotateY(" + cubeAngle +       "deg)";
+    if (cubeAngle >= 90) {
+        cubeAngle = cubeAngle + 90;
+    }  
+}
+	</script>
 
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
@@ -73,6 +83,7 @@ a {
 .wrap { 
 	perspective: 800px;
   perspective-origin: 50% 100px;
+	margin-bottom:200px;
 }
 #cube {
   position: relative;
